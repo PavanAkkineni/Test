@@ -32,7 +32,8 @@ import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {![Uploading Screenshot (8).png…]()
+
     public FloatingActionButton floatingActionButton;
 
     @Override
