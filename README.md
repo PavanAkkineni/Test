@@ -22,3 +22,31 @@
     </application>
 
 </manifest>
+#main activity code
+package com.example.myapplication;
+
+import androidx.appcompat.app.AppCompatActivity;
+import android.view.View;
+
+import android.os.Bundle;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
+public class MainActivity extends AppCompatActivity {
+    public FloatingActionButton floatingActionButton;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        floatingActionButton=findViewById(R.id.editTextTextPersonName);
+        floatingActionButton.setOnClickListener(new View.onClickListener(){
+            @Override
+            public void onClick(view v){
+                Intent intent = new Intent (packageContext, MainActivity.this,Activity1.class);
+                startActivity(intent);
+            }
+        });
+
+    }
+}
